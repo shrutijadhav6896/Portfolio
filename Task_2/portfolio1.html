@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    header{
+    background-image: url(mono2.webp);
+    background-size: cover;
+     }
+     .navbar {
+    overflow: hidden;
+    background-color:#333;
+    /* background-image: url(mono1.jpg);
+    background-size: cover; */
+    }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+     }
+     a{
+    font-size: 20px;
+  }
+  .flex-container {
+            display: flex;
+            /* justify-content: space-around; */
+            /* align-items: center; */
+            width: 100%;
+            border: 2px solid whitesmoke;
+            padding: 5px;
+            background-color:whitesmoke;
+            color:black;
+        }
+        .flex-item {
+            padding: 2px;
+            /* border: 1px solid #666; */
+        } 
+       p{
+        font-size: 20px;
+       }  
+       h2 {
+            color:#333
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        } 
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: justify;
+        }
+
+        .project {
+            flex-basis: calc(33.33% - 20px);
+            margin-bottom: 20px; 
+            border-radius: 2px;
+            border-color: #333;
+        }
+        footer {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+</style>
+<body>
+   <header style="background-color:orange;">
+        <h1 style="font-family:cursive;" >Portfolio</h1>
+        <h1 style="font-family:monospace; font-size: 30px;"><center>Shruti Jadhav</center></h1>
+        <h3 style="font-family:monospace; font-size: 30px;"><center>Student</center></h3>
+    </header>
+    <nav class="navbar" id="nav">
+        <a href="#about" class="w3-button w3-bar-item">ABOUT</a>
+        <a href="#skills" class="w3-button w3-bar-item">SKILLS</a>
+        <a href="#projects" class="w3-button w3-bar-item">PROJECTS</a>
+        <a href="White Simple Student CV Resume.pdf" class="w3-button w3-bar-item">DOWNLOAD RESUME</a>
+        <a href="#footer" class="w3-button w3-bar-item">CONTACT</a> 
+    </nav>
+    <br>
+    <div class="flex-container" id="about">
+        <div class="flex-item"><img src="IMG-20220815-WA0002.jpg" height="300" width="350"></div>
+        <div class="flex-item"><h1>About Me</h1><br><p><h2>Computer Enggineering
+            student at VPKBIET Baramati.<br>I consider my self a responsible and orderly person.
+            <br>I am looking foward for my first work experience.</h2></p></div>
+        
+    </div>
+    <br>
+    <section id="skills" class="flex-container">
+        <br>
+        <ul>
+            <h1 style="font-size: 35px;">Skills</h1>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>C/C++</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+            
+        </ul>
+    </section>
+    <br>
+    <section class="flex-container"><div><h1 style="font-size: 35px;">Projects</h1></div></section>
+    <section id="projects" class="flex-container">
+        
+        <br>
+        <div class="projects">
+            
+            <div class="project">
+                <h2>Project 1</h2>
+                <p>Student Result Management System</p>
+                <p>The "Student Result Management System" is a project that simplifies the 
+                    tracking of student performance. It allows easy entry, calculation, and
+                     retrieval of grades, making it a user-friendly tool for schools and 
+                     colleges.
+                </p>
+            </div>
+            <div class="project">
+                <h2>Project 2</h2>
+                <p>Pharmacy Management System</p>
+                <p>The "Pharmacy Management System" is a project designed to streamline and 
+                    simplify the management of pharmacy operations. It facilitates easy handling of 
+                    tasks such as inventory management, prescription processing, and sales tracking.
+                </p>
+            </div>
+            <div class="project">
+                <h2>Project 3</h2>
+                <p>Movie Recommendation System</p>
+                <p>The "Movie Recommendation System" is a project aimed at enhancing user experience by 
+                    suggesting personalized movie recommendations. By analyzing user preferences and 
+                    viewing history.
+                </p>
+            </div>
+        </div>
+    </section>
+        <br>
+     <section>
+
+     </section>  
+     <footer id="footer">
+        <div class="column">
+            <ul>
+                <h2 style="color: #fff;">Address</h2><br>
+                Street No. 4
+                Vidyanagari
+                MIDC
+                BARAMATI
+                <br>413133</br>
+            </ul>
+        </div>
+ 
+        <div class="column">
+            
+            <ul>
+                <h2 style="color: #fff;">Contact</h2><br>
+                <li>+91-6789455467</li>
+                <li>+91-9089098756</li>
+            </ul>
+        </div>
+    </footer>    
+    </body>
+</html>
